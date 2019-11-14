@@ -145,6 +145,7 @@ export default class Auth0Client {
       baseUrl: this.domainUrl,
       audience: options.audience || this.options.audience,
       client_id: this.options.client_id,
+      client_secret: this.options.client_secret,
       code_verifier,
       code: codeResult.code
     });
@@ -267,6 +268,7 @@ export default class Auth0Client {
       baseUrl: this.domainUrl,
       audience: this.options.audience,
       client_id: this.options.client_id,
+      client_secret: this.options.client_secret,
       code_verifier: transaction.code_verifier,
       code
     });
@@ -360,6 +362,7 @@ export default class Auth0Client {
         baseUrl: this.domainUrl,
         audience: options.audience || this.options.audience,
         client_id: this.options.client_id,
+        client_secret: this.options.client_secret,
         code_verifier,
         code: codeResult.code
       });

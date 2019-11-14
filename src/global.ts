@@ -77,6 +77,10 @@ interface Auth0ClientOptions extends BaseLoginOptions {
    */
   client_id: string;
   /**
+   * The Client Secret found on your Application settings page
+   */
+  client_secret: string;
+  /**
    * The default URL where Auth0 will redirect your browser to with
    * the authentication result. It must be whitelisted in
    * the "Allowed Callback URLs" field in your Auth0 Application's
@@ -231,6 +235,7 @@ interface AuthenticationResult {
 interface OAuthTokenOptions {
   baseUrl: string;
   client_id: string;
+  client_secret: string;
   audience?: string;
   code_verifier: string;
   code: string;
